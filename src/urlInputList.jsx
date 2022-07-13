@@ -41,28 +41,16 @@ RemoveFromList=(i)=>{
   arr= [...this.state.urllist]
   arr.splice(i,1)
   this.setState({urllist:arr})
-  alert(arr)
+  
   
 
 }
-RemoveFromList1(indx)
-{
-  let arr=[]
-  arr= [...this.state.urllist]
-  arr.splice(indx,1)
-  this.setState({urllist:[...arr]})
- // this.setState({urllist:arr})
-//  alert(arr)
-  arr= [...this.state.urllist]
-  alert(arr)
- // alert(this.state.urllist)
-  
- }
+
   render() {
     let resarr=[]
     for (let i=0 ; i< this.state.urllist.length; i++  )
     { let elem = this.state.urllist[i]
-      resarr.push(<UrlListElement text={elem} key={i}  onRemove={this.RemoveFromList} />)
+      resarr.push(<UrlListElement text={elem} key={i} index={i} onRemove={this.RemoveFromList} />)
     }
    // this.state.urllist.forEach((elem)=>{resarr.push(<UrlListElement text={elem} key={elem} onRemove={this.RemoveFromList} />)})
     

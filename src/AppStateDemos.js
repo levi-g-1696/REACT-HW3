@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import CounterDemo from './Counter';//Function Component
 import Car from './Car';//Class Component
 
-import UrlInputCOMP from './zeBadurlInputComp1';
-import UrlInputList from './urlInputList';
+
+import UrlInputList_v2 from './urlList-V2';
 
 
 function AppStateDemos() {
@@ -12,7 +12,7 @@ function AppStateDemos() {
   return (
     <>
      {/* <UrlInputCOMP /> */}
-     <UrlInputList />
+     <UrlInputList_v2 />
     </>
 
 
