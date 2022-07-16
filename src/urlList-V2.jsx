@@ -9,7 +9,7 @@ export default class UrlInputList_v2 extends React.Component {
             urllist: [],
             urlLine: "",
             currentInput: "",
-            currentID: "klklk"
+            currentID: ""
 
 
         };
