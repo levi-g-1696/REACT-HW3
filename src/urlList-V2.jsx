@@ -48,10 +48,7 @@ export default class UrlInputList_v2 extends React.Component {
         //     this.setState({ urllist: [...this.state.urllist] })
         //  this.setState({currentID: "urlObj.id" })
         this.setState({ currentID: urlObj.id })
-        this.tempCurrentID = urlObj.id
-
-
-
+      
     }
 
     onSortAsc = () => {
